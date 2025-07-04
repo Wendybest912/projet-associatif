@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Graines d'Artistes</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (identique à index.html) -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-emerald">G</span>raines 
+                <span class="logo-amber">d'</span>Artistes
+            </a>
+            <button id="menu-toggle" aria-label="Menu" class="menu-toggle">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                <li><a href="about.html" class="nav-link ">Présentation</a></li>
+                <li><a href="programme.html" class="nav-link">Programmes</a></li>
+                <li><a href="gallery.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Nous contacter</h2>
+                <p>Une question ? Un projet ? Écrivez-nous ou passez nous voir !</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <a href="mailto:contact@graines-artistes.org">contact@graines-artistes.org</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <a href="tel:+33123456789">01 23 45 67 89</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <p>123 Avenue des Arts<br>75001 Paris</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <h3>Envoyez-nous un message</h3>
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <select id="subject">
+                        <option value="atelier">Inscription aux ateliers</option>
+                        <option value="don">Faire un don</option>
+                        <option value="partenariat">Partenariat</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div id="don-fields" style="display: none;">
+                    <div class="form-group">
+                        <label for="don-type">Type de don</label>
+                        <select id="don-type">
+                            <option value="financier">Financier</option>
+                            <option value="materiel">Matériel</option>
+                            <option value="competence">Compétence</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="don-montant">Montant (€)</label>
+                        <input type="number" id="don-montant" min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="don-message">Message supplémentaire</label>
+                        <textarea id="don-message" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- Footer (identique à index.html) -->
+     <footer>
+        <div class="footer-container">
+        <div class="footer-brand">
+            <span class="logo-emerald">G</span>raines 
+            <span class="logo-amber">d'</span>Artistes
+        </div>
+        <div class="footer-links">
+            <h4>Navigation</h4>
+            <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">Présentation</a></li>
+            <li><a href="programme.html">Programmes</a></li>
+            <li><a href="RGPD.html">Mentions légales</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <address>
+            123 Avenue des Arts<br />
+            75001 Paris<br />
+            contact@graines-artistes.org<br />
+            +33 1 23 45 67 89
+            </address>
+        </div>
+        </div>
+        <div class="footer-bottom">
+        <p>© 2025 Graines d'Artistes. Tous droits réservés.</p>
+        </div>
+  </footer>
+
+    <script src="contact.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Style spécifique à la page mentions légales */
+.mentions-content {
+    padding-top: 80px; /* Compensation pour la navbar fixe */
+    background-color: #F3F4F6;
+    min-height: 100vh;
+}
+
+.mentions-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.mentions-container h1 {
+    color: #10B981;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+.mentions-container h2 {
+    color: #F59E0B;
+    margin: 30px 0 15px;
+    font-size: 1.5rem;
+}
+
+.mentions-container p, 
+.mentions-container ul {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #4B5563;
+}
+
+.mentions-container ul {
+    padding-left: 20px;
+}
+
+.mentions-container li {
+    margin-bottom: 8px;
+}
+
+.update {
+    text-align: right;
+    font-style: italic;
+    color: #6B7280;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mentions-container {
+        padding: 20px;
+        margin: 20px;
+    }
+}
