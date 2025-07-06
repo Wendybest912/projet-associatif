@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Métadonnées de base -->
+  <meta charset="UTF-8" /> <!-- Encodage des caractères -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Responsive design -->
+  <title>Programmes | Graines d'Artistes</title> <!-- Titre de la page -->
+  
+  <!-- Feuilles de style -->
+  <link rel="stylesheet" href="style.css"/> <!-- Style principal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Icônes Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/> <!-- Polices Google -->
+</head>
+
+<body>
+  <!-- Barre de progression du défilement -->
+  <div id="progress-bar"></div>
+
+  <!-- Barre de navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <!-- Logo avec effets de couleur -->
+      <a href="index.html" class="logo">
+        <span class="logo-emerald">G</span>raines 
+        <span class="logo-amber">d'</span>Artistes
+      </a>
+      
+      <!-- Bouton menu mobile -->
+      <button id="menu-toggle" class="menu-toggle" aria-label="Menu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+      
+      <!-- Menu principal -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="about.html" class="nav-link">Présentation</a></li>
+        <li><a href="programme.html" class="nav-link active">Programmes</a></li>
+        <li><a href="gallery.html" class="nav-link">Galerie</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- En-tête hero -->
+  <header class="hero hero-programme">
+    <div class="hero-overlay"></div> <!-- Overlay pour effet visuel -->
+    <div class="hero-content">
+      <h1><span class="hero-gradient">Découvrez</span> nos programmes</h1>
+      <p class="hero-subtitle">
+        Une immersion artistique complète à travers des ateliers conçus pour éveiller le talent.
+      </p>
+      <a href="#programmes" class="btn btn-primary">Explorer les activités</a> <!-- Bouton call-to-action -->
+    </div>
+  </header>
+
+  <!-- Barre de filtrage -->
+  <section class="filter-bar">
+    <div class="container">
+      <button class="filter-btn active" data-category="all">Tous</button> <!-- Bouton actif par défaut -->
+      <button class="filter-btn" data-category="arts">Arts Visuels</button>
+      <button class="filter-btn" data-category="scene">Scène</button>
+      <button class="filter-btn" data-category="musique">Musique</button>
+    </div>
+  </section>
+
+  <!-- Section des programmes -->
+  <section class="programs" id="programmes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Nos Activités</span> <!-- Badge thématique -->
+        <h2 class="section-title">Programmes artistiques immersifs</h2> <!-- Titre de section -->
+      </div>
+      
+      <!-- Grille des programmes -->
+      <div class="programs-grid">
+
+        <!-- Carte programme 1 - Peinture -->
+        <div class="program-card" data-category="arts">
+          <div class="program-icon"><i class="fas fa-palette"></i></div> <!-- Icône -->
+          <h3>Peinture Expressive</h3> <!-- Titre programme -->
+          <p>Exprimer ses émotions à travers l'acrylique, l'aquarelle et le collage libre.</p> <!-- Description -->
+        </div>
+
+        <!-- Carte programme 2 - Théâtre -->
+        <div class="program-card" data-category="scene">
+          <div class="program-icon"><i class="fas fa-theater-masks"></i></div>
+          <h3>Improvisation Théâtrale</h3>
+          <p>Développer l'estime de soi et la prise de parole en public.</p>
+        </div>
+
+        <!-- Carte programme 3 - Musique -->
+        <div class="program-card" data-category="musique">
+          <div class="program-icon"><i class="fas fa-headphones-alt"></i></div>
+          <h3>Création de Beats</h3>
+          <p>Un atelier de MAO (musique assistée par ordinateur) pour créer des sons percutants.</p>
+        </div>
+
+        <!-- Carte programme 4 - Murales -->
+        <div class="program-card" data-category="arts">
+          <div class="program-icon"><i class="fas fa-brush"></i></div>
+          <h3>Murales Collectives</h3>
+          <p>Réalisation de fresques pour dynamiser les quartiers et exprimer des causes sociales.</p>
+        </div>
+
+        <!-- Carte programme 5 - Slam -->
+        <div class="program-card" data-category="musique">
+          <div class="program-icon"><i class="fas fa-microphone-alt"></i></div>
+          <h3>Atelier Slam & Voix</h3>
+          <p>Libérer les mots pour transformer ses vécus en poésie rythmée.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline pédagogique -->
+  <section class="timeline-section">
+    <div class="container">
+      <h2 class="section-title">Parcours Pédagogique</h2> <!-- Titre section -->
+      <div class="timeline">
+        <div class="timeline-step"><span>1</span>Découverte & Initiation</div> <!-- Étape 1 -->
+        <div class="timeline-step"><span>2</span>Création encadrée</div> <!-- Étape 2 -->
+        <div class="timeline-step"><span>3</span>Exposition ou Représentation</div> <!-- Étape 3 -->
+        <div class="timeline-step"><span>4</span>Suivi & Valorisation</div> <!-- Étape 4 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="cta-title">Rejoignez l'aventure artistique</h2> <!-- Titre incitatif -->
+      <p class="cta-text">Nous croyons en la puissance de la créativité pour changer des vies. Prêt(e) à nous aider dans cette aventure ?</p>
+      <a href="contact.html" class="btn btn-primary">Inscription & Contact</a> <!-- Bouton principal -->
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="footer-container">
+      <!-- Section logo -->
+      <div class="footer-brand">
+        <span class="logo-emerald">G</span>raines 
+        <span class="logo-amber">d'</span>Artistes
+      </div>
+      
+      <!-- Liens rapides -->
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">Présentation</a></li>
+          <li><a href="programme.html">Programmes</a></li>
+          <li><a href="RGPD.html">Mentions légales</a></li>
+        </ul>
+      </div>
+      
+      <!-- Coordonnées -->
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <address>
+          123 Avenue des Arts<br />
+          75001 Paris<br />
+          contact@graines-artistes.org<br />
+          +33 1 23 45 67 89
+        </address>
+      </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>© 2025 Graines d'Artistes. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts JavaScript -->
+  <script src="script.js"></script> <!-- Script principal -->
+  
+  <!-- Scripts spécifiques à la page -->
+  <script>
+    // Filtrage dynamique des programmes
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const programCards = document.querySelectorAll('.program-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Gestion de l'état actif des boutons
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Filtrage des cartes
+        const category = btn.getAttribute('data-category');
+        programCards.forEach(card => {
+          card.style.display = (category === 'all' || card.dataset.category === category) ? 'block' : 'none';
+        });
+      });
+    });
+
+    // Barre de progression du défilement
+    const progressBar = document.getElementById('progress-bar');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollProgress = (scrollY / totalHeight) * 100;
+      progressBar.style.width = scrollProgress + '%';
+    });
+  </script>
+</body>
+</html>

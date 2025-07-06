@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Métadonnées de base -->
+    <meta charset="UTF-8"> <!-- Encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <link href="gallery-style.css" rel="stylesheet"> <!-- Feuille de style spécifique à la galerie -->
+    <title>Galerie - Graines d'Artistes</title> <!-- Titre de la page -->
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <!-- Logo avec effets de couleur -->
+            <a href="index.html" class="logo">
+                <span class="logo-emerald">G</span>raines 
+                <span class="logo-amber">d'</span>Artistes
+            </a>
+            
+            <!-- Bouton menu mobile -->
+            <button id="menu-toggle" aria-label="Menu" class="menu-toggle">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+            
+            <!-- Menu de navigation -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">Présentation</a></li>
+                <li><a href="programme.html" class="nav-link">Programmes</a></li>
+                <li><a href="gallery.html" class="nav-link active">Galerie</a></li> <!-- Lien actif -->
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenu principal de la galerie -->
+    <main class="gallery-section">
+        <!-- En-tête de section -->
+        <div class="section-header">
+            <span class="section-badge">Nos réalisations</span> <!-- Badge thématique -->
+            <h2 class="section-title">Galerie <span class="gradient-text">d'œuvres</span></h2> <!-- Titre avec effet de gradient -->
+        </div>
+
+        <!-- Conteneur de la galerie -->
+        <div class="gallery-container">
+            <!-- Conteneur des diapositives -->
+            <div class="gallery-slides">
+                <!-- Diapositive 1 (active par défaut) -->
+                <div class="slide active">
+                    <img src="assets/gallery1.jpg" alt="Œuvre d'art 1"> <!-- Image principale -->
+                    <div class="slide-caption">Titre de l'œuvre 1</div> <!-- Légende -->
+                </div>
+                
+                <!-- Diapositive 2 -->
+                <div class="slide">
+                    <img src="assets/gallery2.jpg" alt="Œuvre d'art 2">
+                    <div class="slide-caption">Titre de l'œuvre 2</div>
+                </div>
+                
+                <!-- Diapositive 3 -->
+                <div class="slide">
+                    <img src="assets/gallery3.jpg" alt="Œuvre d'art 3">
+                    <div class="slide-caption">Titre de l'œuvre 3</div>
+                </div>
+                
+                <!-- Diapositive 4 -->
+                <div class="slide">
+                    <img src="assets/gallery4.jpg" alt="Œuvre d'art 4">
+                    <div class="slide-caption">Titre de l'œuvre 4</div>
+                </div>
+                
+                <!-- Diapositive 5 -->
+                <div class="slide">
+                    <img src="assets/gallery5.jpg" alt="Œuvre d'art 5">
+                    <div class="slide-caption">Titre de l'œuvre 5</div>
+                </div>
+            </div>
+
+            <!-- Navigation entre les diapositives -->
+            <button class="slide-nav prev" aria-label="Image précédente">‹</button> <!-- Bouton précédent -->
+            <button class="slide-nav next" aria-label="Image suivante">›</button> <!-- Bouton suivant -->
+
+            <!-- Miniatures pour navigation -->
+            <div class="thumbnails">
+                <!-- Miniature 1 (active par défaut) -->
+                <img src="assets/gallery1.jpg" class="thumb active" data-index="0" alt="Miniature 1">
+                
+                <!-- Miniature 2 -->
+                <img src="assets/gallery2.jpg" class="thumb" data-index="1" alt="Miniature 2">
+                
+                <!-- Miniature 3 -->
+                <img src="assets/gallery3.jpg" class="thumb" data-index="2" alt="Miniature 3">
+                
+                <!-- Miniature 4 -->
+                <img src="assets/gallery4.jpg" class="thumb" data-index="3" alt="Miniature 4">
+                
+                <!-- Miniature 5 -->
+                <img src="assets/gallery5.jpg" class="thumb" data-index="4" alt="Miniature 5">
+            </div>
+        </div>
+
+        <!-- Pied de page -->
+        <footer>
+            <div class="footer-container">
+                <!-- Section logo -->
+                <div class="footer-brand">
+                    <span class="logo-emerald">G</span>raines 
+                    <span class="logo-amber">d'</span>Artistes
+                </div>
+                
+                <!-- Liens rapides -->
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">Présentation</a></li>
+                        <li><a href="programme.html">Programmes</a></li>
+                        <li><a href="RGPD.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Coordonnées -->
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <address>
+                        123 Avenue des Arts<br />
+                        75001 Paris<br />
+                        contact@graines-artistes.org<br />
+                        +33 1 23 45 67 89
+                    </address>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>© 2025 Graines d'Artistes. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts JavaScript -->
+    <script src="gallery.js"></script> <!-- Script spécifique à la galerie -->
+    <script src="script.js"></script> <!-- Script principal -->
+</body>
+</html>
